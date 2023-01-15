@@ -203,9 +203,9 @@ function extractEmails(str) {
  *
  */
 function getRectangleString(width, height) {
-  let topl = '┌' + '─'.repeat(width - 2) + '┐\n';
-  let midl = '│' + ' '.repeat(width - 2) + '│\n';
-  let dl = '└' + '─'.repeat(width - 2) + '┘\n';
+  const topl = `┌${'─'.repeat(width - 2)}┐\n`;
+  const midl = `│${' '.repeat(width - 2)}│\n`;
+  const dl = `└${'─'.repeat(width - 2)}┘\n`;
   return topl + midl.repeat(height - 2) + dl;
 }
 
@@ -227,7 +227,7 @@ function getRectangleString(width, height) {
  *
  */
 function encodeToRot13(str) {
-  
+
 }
 
 /**
